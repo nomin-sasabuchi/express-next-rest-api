@@ -9,15 +9,15 @@
 
 🎯 学習の最終ゴール（実践レベル）
 
-- [] API 設計（REST/GraphQL）
-- [] 認証・認可（JWT, OAuth など）
-- [] DB との連携（Prisma, Sequelize, etc.）
-- [] バリデーション・エラーハンドリング
-- [] ミドルウェア設計
-- [] 環境変数・設定管理
-- [] テスト（ユニット/統合）
-- [] セキュリティ対策（CORS, Helmet, Rate limiting）
-- [] デプロイ（Docker, CI/CD）
+- [ ] API 設計（REST）
+- [ ] 認証・認可（JWT, OAuth など）
+- [ ] DB との連携（Prisma, Sequelize, etc.）
+- [ ] バリデーション・エラーハンドリング
+- [ ] ミドルウェア設計
+- [ ] 環境変数・設定管理
+- [ ] テスト（ユニット/統合）
+- [ ] セキュリティ対策（CORS, Helmet, Rate limiting）
+- [ ] デプロイ（Docker, CI/CD）
 
 ## プロジェクト構成
 
