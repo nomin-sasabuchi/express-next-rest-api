@@ -9,7 +9,7 @@
 
 ## 学習の最終ゴール（実践レベル）
 
-- [ ] API 設計（REST）
+- [ ] API 設計（REST/graphql）
 - [ ] 認証・認可（JWT, OAuth など）
 - [ ] DB との連携（Prisma, Sequelize, etc.）
 - [ ] バリデーション・エラーハンドリング

@@ -1,0 +1,39 @@
+name: Generate and Embed Diagrams
+
+on:
+  # Event for the workflow
+  pull_request:
+    branches:
+      - main
+    #マッチする変更が一つでもあったらワークフローを起動
+    paths:
+      - "docs/**"
+      - ".github/workflows/generate-diagrams.yml"
+
+jobs:
+  export-and-embed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Export .drawio files to PNG
+        uses: rlespinasse/drawio-export-action@v2
+        with:
+          drawio_files: "diagrams/*.drawio"
+          output_format: "png"
+          output_dir: "images"
+
+      - name: Embed image links into README.md
+        run: |
+          echo 'Updating diagram links in README.md'
+          # Example: update only one diagram, add more lines for others
+          sed -i '/<!-- diagram:context -->/!b;n;c![Context Diagram](./images/context.png)' README.md
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add images/*.png README.md
+          git commit -m "Auto-update diagram images and README" || echo "No changes to commit"
+          git push
