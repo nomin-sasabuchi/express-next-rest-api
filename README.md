@@ -7,7 +7,7 @@
 - Node.js >= 18.0.0
 - pnpm >= 8.15.4
 
-🎯 学習の最終ゴール（実践レベル）
+## 学習の最終ゴール（実践レベル）
 
 - [ ] API 設計（REST）
 - [ ] 認証・認可（JWT, OAuth など）
@@ -18,6 +18,73 @@
 - [ ] テスト（ユニット/統合）
 - [ ] セキュリティ対策（CORS, Helmet, Rate limiting）
 - [ ] デプロイ（Docker, CI/CD）
+
+## この学習で作成するAPP
+
+- [ ] 1. ユーザー管理API（CRUD）
+     概要：ユーザーの新規作成・一覧・詳細・更新・削除を提供するREST API
+     身につく力：
+- クラス設計（Entity, Repository, UseCase）
+- ルーティングとコントローラーの分離
+- 3層アーキテクチャの基本
+- JSONベースAPIの実装
+
+🔰 最もベーシックかつ業務系に必須。最初に絶対おすすめ。
+
+- [ ] 2. 認証付きToDoアプリAPI（ログイン機能付き）
+     概要：ユーザー認証付きでToDoタスクを管理
+     身につく力：
+- ユーザー×データの関係
+- JWTやセッションの認証設計
+- 中間ウェア（authMiddlewareなど）の設計
+- ロールやスコープなどの制御
+
+👤 認証・ユーザーセッションを学びたいならこれ。実務でも頻出。
+
+- [ ] 3. ブログAPI（投稿＋ユーザー）
+     概要：ユーザーが記事を投稿・編集・削除できるシステム
+
+身につく力：
+
+- 投稿系のドメイン設計
+- リッチなEntity（記事、ユーザー、タグなど）
+- 検索やフィルタリングの処理
+
+## 📘 API 設計一覧
+
+### 🔐 ユーザー管理 API
+
+| メソッド | エンドポイント   | 説明                       | パラメータ or 認証          |
+| -------- | ---------------- | -------------------------- | --------------------------- |
+| POST     | `/api/register`  | ユーザー登録               | `name`, `email`, `password` |
+| POST     | `/api/login`     | ログイン（JWT 発行）       | `email`, `password`         |
+| GET      | `/api/me`        | ログイン中ユーザー情報取得 | `Authorization` ヘッダー    |
+| PUT      | `/api/users/:id` | ユーザー情報更新           | `name`, `email`             |
+| DELETE   | `/api/users/:id` | ユーザー削除               | `Authorization` ヘッダー    |
+
+---
+
+### ✅ ToDo API（認証必要）
+
+| メソッド | エンドポイント   | 説明               | パラメータ or 認証              |
+| -------- | ---------------- | ------------------ | ------------------------------- |
+| GET      | `/api/todos`     | 自分のToDo一覧取得 | `Authorization` ヘッダー        |
+| POST     | `/api/todos`     | ToDo作成           | `title`, `dueDate`, `completed` |
+| GET      | `/api/todos/:id` | ToDo詳細取得       | `Authorization` ヘッダー        |
+| PUT      | `/api/todos/:id` | ToDo更新           | `title`, `dueDate`, `completed` |
+| DELETE   | `/api/todos/:id` | ToDo削除           | `Authorization` ヘッダー        |
+
+---
+
+### 📝 ブログ投稿 API
+
+| メソッド | エンドポイント   | 説明                 | パラメータ or 認証         |
+| -------- | ---------------- | -------------------- | -------------------------- |
+| GET      | `/api/posts`     | 投稿一覧取得（公開） | 認証不要                   |
+| POST     | `/api/posts`     | 投稿作成             | `title`, `content`, `tags` |
+| GET      | `/api/posts/:id` | 投稿詳細取得         | 認証不要                   |
+| PUT      | `/api/posts/:id` | 投稿更新             | `title`, `content`, `tags` |
+| DELETE   | `/api/posts/:id` | 投稿削除             | 作成者のみ（JWT）          |
 
 ## プロジェクト構成
 
