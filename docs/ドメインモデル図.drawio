@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="wLYVdVxrgqWj_LJIeQVb" name="ページ1">
-        <mxGraphModel dx="817" dy="603" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="847" dy="691" grid="1" gridSize="10" guides="0" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -52,7 +52,7 @@
                 <mxCell id="4" value="&lt;div style=&quot;&quot;&gt;&lt;b&gt;&lt;u&gt;タスク&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;・タスク名&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;・詳細&lt;br&gt;・ステータス(未着手、作業中、完了)&lt;br&gt;・作業開始日時&lt;br&gt;・作業終了日時&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;u&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/u&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;labelBackgroundColor=none;" vertex="1" parent="1">
                     <mxGeometry x="274" y="160" width="140" height="200" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="&lt;div style=&quot;&quot;&gt;&lt;b&gt;&lt;u&gt;ブログ&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;・写真&lt;br&gt;・ブログ名&lt;br&gt;・タグ&lt;br&gt;・カテゴリー&lt;br&gt;・詳細&lt;br&gt;・投稿日時&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;textShadow=1;" vertex="1" parent="1">
+                <mxCell id="5" value="&lt;div style=&quot;&quot;&gt;&lt;b&gt;&lt;u&gt;ブログ&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;・写真&lt;br&gt;・ブログ名&lt;br&gt;・タグ&lt;br&gt;・カテゴリー&lt;br&gt;・詳細&lt;br&gt;・投稿日時&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;textShadow=0;" vertex="1" parent="1">
                     <mxGeometry x="280" y="380" width="140" height="180" as="geometry"/>
                 </mxCell>
                 <mxCell id="6" value="&lt;div style=&quot;&quot;&gt;&lt;b&gt;&lt;u&gt;通知先&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;・ツール&lt;br&gt;・アカウント情報&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
